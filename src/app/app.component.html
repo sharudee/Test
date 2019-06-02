@@ -1,0 +1,9 @@
+<div>
+  <h1>{{title}} {{version}}</h1>
+  <button (click)="onClickApp()">AppComponent</button>
+  <button (click)="updateC2ViewChild()">Update Child2 using ViewChild</button>
+  
+
+  <app-com1 [count_child1]="11" [time]="timeVar" (onReset)="reset($event)"></app-com1>
+  <app-com2 #com2 [count_child2]="version"></app-com2>
+</div>
